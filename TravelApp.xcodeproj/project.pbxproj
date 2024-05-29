@@ -11,6 +11,14 @@
 		FB7A074E2C07721C008E53AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A074D2C07721C008E53AA /* ContentView.swift */; };
 		FB7A07502C07721D008E53AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7A074F2C07721D008E53AA /* Assets.xcassets */; };
 		FB7A07532C07721D008E53AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7A07522C07721D008E53AA /* Preview Assets.xcassets */; };
+		FB7A075C2C0772F5008E53AA /* TravelDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A075B2C0772F5008E53AA /* TravelDestination.swift */; };
+		FB7A07602C077472008E53AA /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A075F2C077472008E53AA /* MainScreenViewModel.swift */; };
+		FB7A07622C0774CA008E53AA /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A07612C0774CA008E53AA /* MainScreenView.swift */; };
+		FB7A07642C07759F008E53AA /* DestinationDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A07632C07759F008E53AA /* DestinationDetailScreen.swift */; };
+		FB7A076E2C07BD86008E53AA /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = FB7A076D2C07BD86008E53AA /* Networking */; };
+		FB7A07752C07C7C1008E53AA /* TransportScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A07742C07C7C1008E53AA /* TransportScreen.swift */; };
+		FB7A07772C07C805008E53AA /* MustSeeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A07762C07C805008E53AA /* MustSeeScreen.swift */; };
+		FB7A07792C07C836008E53AA /* HotelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A07782C07C836008E53AA /* HotelScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,13 @@
 		FB7A074D2C07721C008E53AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB7A074F2C07721D008E53AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB7A07522C07721D008E53AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB7A075B2C0772F5008E53AA /* TravelDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDestination.swift; sourceTree = "<group>"; };
+		FB7A075F2C077472008E53AA /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		FB7A07612C0774CA008E53AA /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		FB7A07632C07759F008E53AA /* DestinationDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDetailScreen.swift; sourceTree = "<group>"; };
+		FB7A07742C07C7C1008E53AA /* TransportScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportScreen.swift; sourceTree = "<group>"; };
+		FB7A07762C07C805008E53AA /* MustSeeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustSeeScreen.swift; sourceTree = "<group>"; };
+		FB7A07782C07C836008E53AA /* HotelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7A076E2C07BD86008E53AA /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				FB7A074B2C07721C008E53AA /* TravelAppApp.swift */,
-				FB7A074D2C07721C008E53AA /* ContentView.swift */,
+				FB7A076F2C07C4C0008E53AA /* Scenes */,
+				FB7A07712C07C517008E53AA /* Model */,
 				FB7A074F2C07721D008E53AA /* Assets.xcassets */,
 				FB7A07512C07721D008E53AA /* Preview Content */,
 			);
@@ -65,6 +82,52 @@
 				FB7A07522C07721D008E53AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB7A076F2C07C4C0008E53AA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FB7A07732C07C58D008E53AA /* ContentView */,
+				FB7A07702C07C502008E53AA /* MainScreen */,
+				FB7A07722C07C530008E53AA /* DestinationDetails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FB7A07702C07C502008E53AA /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FB7A07612C0774CA008E53AA /* MainScreenView.swift */,
+				FB7A075F2C077472008E53AA /* MainScreenViewModel.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		FB7A07712C07C517008E53AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB7A075B2C0772F5008E53AA /* TravelDestination.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB7A07722C07C530008E53AA /* DestinationDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FB7A07632C07759F008E53AA /* DestinationDetailScreen.swift */,
+				FB7A07742C07C7C1008E53AA /* TransportScreen.swift */,
+				FB7A07762C07C805008E53AA /* MustSeeScreen.swift */,
+				FB7A07782C07C836008E53AA /* HotelScreen.swift */,
+			);
+			path = DestinationDetails;
+			sourceTree = "<group>";
+		};
+		FB7A07732C07C58D008E53AA /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				FB7A074D2C07721C008E53AA /* ContentView.swift */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +146,9 @@
 			dependencies = (
 			);
 			name = TravelApp;
+			packageProductDependencies = (
+				FB7A076D2C07BD86008E53AA /* Networking */,
+			);
 			productName = TravelApp;
 			productReference = FB7A07482C07721C008E53AA /* TravelApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +177,9 @@
 				Base,
 			);
 			mainGroup = FB7A073F2C07721B008E53AA;
+			packageReferences = (
+				FB7A076C2C07BD86008E53AA /* XCRemoteSwiftPackageReference "SimpleNetworking" */,
+			);
 			productRefGroup = FB7A07492C07721C008E53AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7A07792C07C836008E53AA /* HotelScreen.swift in Sources */,
 				FB7A074E2C07721C008E53AA /* ContentView.swift in Sources */,
+				FB7A07622C0774CA008E53AA /* MainScreenView.swift in Sources */,
+				FB7A075C2C0772F5008E53AA /* TravelDestination.swift in Sources */,
+				FB7A07752C07C7C1008E53AA /* TransportScreen.swift in Sources */,
+				FB7A07772C07C805008E53AA /* MustSeeScreen.swift in Sources */,
+				FB7A07642C07759F008E53AA /* DestinationDetailScreen.swift in Sources */,
+				FB7A07602C077472008E53AA /* MainScreenViewModel.swift in Sources */,
 				FB7A074C2C07721C008E53AA /* TravelAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +418,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB7A076C2C07BD86008E53AA /* XCRemoteSwiftPackageReference "SimpleNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BakarKharabadze/SimpleNetworking";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB7A076D2C07BD86008E53AA /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB7A076C2C07BD86008E53AA /* XCRemoteSwiftPackageReference "SimpleNetworking" */;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB7A07402C07721B008E53AA /* Project object */;
 }
